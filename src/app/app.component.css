@@ -1,0 +1,30 @@
+.count {
+  font-family: monospace;
+  font-size: 64px;
+  text-align: center;
+  padding: 0 5px 0 0;
+}
+
+.mat-card {
+  max-width: 400px;
+}
+
+.counter-container {
+  width:120px;
+}
+
+.counter-container:hover {
+  width:120px;
+}
+
+.counter-container  * {
+  margin: 0;
+  padding: 0;
+}
+
+.digit {
+  width: 40px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}

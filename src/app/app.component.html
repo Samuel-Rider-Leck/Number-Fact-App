@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title>Numbers API Card</mat-card-title>
+  <mat-card-subtitle>Accesses the <a href="http://numbersapi.com/">Numbers API</a> to display a number fact for the number of your choice!</mat-card-subtitle>
+  <mat-card-content>{{fact}}</mat-card-content>
+  <div class="counter-container">
+    <mat-card-actions>
+      <button mat-icon-button *ngFor="let i of items" (click)="onClickUp(i)"><mat-icon>keyboard_arrow_up</mat-icon></button>
+    </mat-card-actions>
+    <mat-card-content class="count"><div class="digit" *ngFor="let i of items">{{digits[i]}}</div></mat-card-content>
+    <mat-card-actions>
+      <button mat-icon-button *ngFor="let i of items" (click)="onClickDown(i)" ><mat-icon>keyboard_arrow_down</mat-icon></button>
+    </mat-card-actions>
+  </div>
+</mat-card>
+  
+
